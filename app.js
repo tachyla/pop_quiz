@@ -2,15 +2,15 @@ const appState = {
   currentQuestion: null,
   results: [],
   questions: [
-    {question: '5 * 2', choices: [4, 13, 5, 10, 93], answer: 10},
+    {question: '5 * 2', choices: [04, 13, 05, 10, 93], answer: 10},
 
-    {question: '10 * 5', choices: [105, 15, 5, 1, 50], answer: 50},
+    {question: '10 * 5', choices: [105, 15, 05, 01, 50], answer: 50},
 
-    {question: '5 + 3', choices: [8, 5, 11, 93, 53], answer: 8},
+    {question: '5 + 3', choices: [08, 05, 11, 93, 53], answer: 8},
 
-    {question: '5 - 3', choices: [3, 2, 9, 5, 10], answer: 2},
+    {question: '5 - 3', choices: [03, 02, 09, 05, 10], answer: 2},
 
-    {question: '15 + 3', choices: [8, 3, 18, 23, 41], answer: 18}
+    {question: '15 + 3', choices: [08, 03, 18, 23, 41], answer: 18}
   ]
 
 };
@@ -67,7 +67,7 @@ function render(state, element, choice) {
     element.html(startingScreenHTML);
   } else if (choice == 'intermediateScreen'){
     let correctAnswers = getCorrect();
-    let intermediateScreenHTML = `<h1>That answer was ${state.results[index]}.</h1>
+    let intermediateScreenHTML = `<h1>That answer was ${state.results[index]}!</h1>
                                   <h2>You have ${correctAnswers.length} out of ${appState.results.length} correct.</h2>`;
     if (state.results[index] == 'incorrect'){
       intermediateScreenHTML += `<h3> The correct answer was ${state.questions[index].answer}`
