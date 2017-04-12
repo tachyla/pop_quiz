@@ -2,32 +2,17 @@ const appState = {
   currentQuestion: null,
   results: [],
   questions: [
-    {
-      question: '5 * 2',
-      choices: [4, 13, 5, 10, 93],
-      answer: 10
-    },
-    {
-      question: '10 * 5',
-      choices: [105, 15, 5, 1, 50],
-      answer: 50
-    },
-    {
-      question: '5 + 3',
-      choices: [8, 5, 11, 93, 53],
-      answer: 8
-    },
-    {
-      question: '5 - 3',
-      choices: [3, 2, 9, 5, 10],
-      answer: 2
-    },
-    {
-      question: '15 + 3',
-      choices: [8, 3, 18, 23, 41],
-      answer: 18
-    }
+    {question: '5 * 2', choices: [4, 13, 5, 10, 93], answer: 10},
+
+    {question: '10 * 5', choices: [105, 15, 5, 1, 50], answer: 50},
+
+    {question: '5 + 3', choices: [8, 5, 11, 93, 53], answer: 8},
+
+    {question: '5 - 3', choices: [3, 2, 9, 5, 10], answer: 2},
+
+    {question: '15 + 3', choices: [8, 3, 18, 23, 41], answer: 18}
   ]
+  
 };
 function getCorrect(){
   let x = appState.results.filter(function (result) {
