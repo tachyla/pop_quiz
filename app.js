@@ -35,7 +35,7 @@ function render(state, element, choice) {
   let percentage = (index / 5) * 100; 
   let choicesHTML =
      `<h1>QUESTION #${state.currentQuestion +1}<br> ${state.questions[index].question}</h1>
-      <h2>Current Score <br> ${correctAnswers.length} :correct <br>${incorrectAnswers.length} :ncorrect</h2>
+      <h2>Current Score <br> ${correctAnswers.length} correct <br>${incorrectAnswers.length} incorrect</h2>
       <form id = 'quizForm'>
       <input type ='radio' name='choice'value ='${state.questions[index].choices[0]}'> ${state.questions[index].choices[0]}<br>
       <input type ='radio' name='choice'value ='${state.questions[index].choices[1]}'> ${state.questions[index].choices[1]}<br>
