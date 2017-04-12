@@ -1,0 +1,25 @@
+.container {
+  box-sizing:border-box;
+  border:2px solid white;
+  height:400px;
+  width:400px;
+  margin:auto;
+  background-color:cornflowerblue;
+}
+*{
+  text-align:center;
+  background-color:cornflowerblue;
+}
+button{
+  background-color:darkviolet;
+}
+
+.bar-container{
+	height: 50px;
+	background-color: white;
+}
+
+.bar-bar {
+	height: 50px;
+	background-color: black;
+}
