@@ -12,7 +12,7 @@ const appState = {
 
     {question: '15 + 3', choices: [8, 3, 18, 23, 41], answer: 18}
   ]
-  
+
 };
 function getCorrect(){
   let x = appState.results.filter(function (result) {
@@ -56,7 +56,7 @@ function render(state, element, choice) {
 
   let closingScreenHTML =
     `<h1>Game Over</h1>
-    <span class="">You got ${correctAnswers.length} of ${appState.questions.length}correct.</span>
+    <span class="">You got ${correctAnswers.length} of ${appState.questions.length} correct.</span>
     <button class="startOverButton">Start Over
     </button>`;
     element.html(closingScreenHTML);
@@ -68,9 +68,9 @@ function render(state, element, choice) {
   } else if (choice == 'intermediateScreen'){
     let correctAnswers = getCorrect();
     let intermediateScreenHTML = `<h1>That answer was ${state.results[index]}.</h1>
-                                  <h2>You have${correctAnswers.length} out of ${appState.results.length}correct.</h2>`;
+                                  <h2>You have ${correctAnswers.length} out of ${appState.results.length} correct.</h2>`;
     if (state.results[index] == 'incorrect'){
-      intermediateScreenHTML += `<h3> correct answer was ${state.questions[index].answer}`
+      intermediateScreenHTML += `<h3> The correct answer was ${state.questions[index].answer}`
     }
     element.html(intermediateScreenHTML);
   }
